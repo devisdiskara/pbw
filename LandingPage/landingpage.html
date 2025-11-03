@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampus Sehat - Tips Kesehatan untuk Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Kampus Sehat</span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#beranda" class="nav-link">Beranda</a></li>
+                        <li><a href="#tips" class="nav-link">Tips Kesehatan</a></li>
+                        <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="fade-in">Jaga Kesehatan di Tengah <span class="highlight">Kesibukan Kampus</span></h1>
+                    <p class="fade-in-delay">Tips praktis menjaga kesehatan fisik dan mental untuk mahasiswa yang sibuk dengan kuliah, tugas, dan organisasi</p>
+                    <div class="hero-buttons fade-in-delay-2">
+                        <a href="#tips" class="btn btn-primary">Jelajahi Tips</a>
+                        <a href="#kontak" class="btn btn-secondary">Konsultasi Gratis</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-hospital-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3 class="counter" data-target="10000">0</h3>
+                    <p>Mahasiswa Aktif</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book-medical"></i>
+                    <h3 class="counter" data-target="150">0</h3>
+                    <p>Tips Kesehatan</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-university"></i>
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>Kampus Partner</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3 class="counter" data-target="4.8">0</h3>
+                    <p>Rating Pengguna</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="tips-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tips Kesehatan untuk Mahasiswa</h2>
+                <p>Tetap sehat dan produktif meski jadwal kuliah padat dan deadline menumpuk</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Tidur Cukup</h3>
+                    <p>Tidur 7-8 jam meski deadline menumpuk. Tidur cukup meningkatkan fokus dan daya ingat saat belajar</p>
+                    <button class="btn-learn-more" onclick="openModal('modal1')">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Kelola Stres</h3>
+                    <p>Atur waktu dengan baik, jangan menunda tugas, dan luangkan waktu untuk istirahat dan hobi</p>
+                    <button class="btn-learn-more" onclick="openModal('modal2')">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Makan Teratur</h3>
+                    <p>Jangan skip sarapan! Makan 3x sehari dengan gizi seimbang untuk energi optimal saat kuliah</p>
+                    <button class="btn-learn-more" onclick="openModal('modal3')">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Olahraga Ringan</h3>
+                    <p>Lakukan stretching atau jalan santai 15-30 menit setiap hari untuk menjaga stamina</p>
+                    <button class="btn-learn-more" onclick="openModal('modal4')">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-glass-water"></i>
+                    </div>
+                    <h3>Minum Air Putih</h3>
+                    <p>Bawa botol minum ke kampus dan minum minimal 8 gelas sehari untuk menjaga konsentrasi</p>
+                    <button class="btn-learn-more" onclick="openModal('modal5')">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Jaga Relasi Sosial</h3>
+                    <p>Luangkan waktu berkualitas dengan teman dan keluarga untuk kesehatan mental yang lebih baik</p>
+                    <button class="btn-learn-more" onclick="openModal('modal6')">Pelajari Lebih Lanjut</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Layanan Kami</h2>
+                <p>Berbagai layanan kesehatan untuk mendukung gaya hidup sehat Anda</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Konsultasi Psikolog</h3>
+                    <p>Konsultasi gratis dengan psikolog kampus untuk masalah akademik dan personal</p>
+                    <a href="https://www.instagram.com/deezcara/" target="_blank" class="btn btn-service">Hubungi Kami</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-newspaper"></i>
+                    <h3>Artikel Kesehatan</h3>
+                    <p>Baca artikel seputar kesehatan mahasiswa, tips belajar, dan work-life balance</p>
+                    <a href="https://www.halodoc.com/?srsltid=AfmBOorrMm8Xr3CpTB67njmCc5REa_fZFgh4c-iFR7qU0LZkEX3hn2Ij" target="_blank" class="btn btn-service">Kunjungi</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Program Olahraga</h3>
+                    <p>Ikuti program olahraga bersama dan kegiatan fitness khusus mahasiswa</p>
+                    <a href="https://www.youtube.com/@devisdiskara" target="_blank" class="btn btn-service">Lihat Video</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Hubungi Kami</h2>
+                    <p>Punya pertanyaan tentang kesehatan kampus? Kami siap membantu!</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Angkrek Situ No.19, Situ, Kec. Sumedang Utara, Kabupaten Sumedang, Jawa Barat 45323</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>087707444762</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>230660121041@student.unsap.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nama Lengkap" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Nomor Telepon" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Kampus Sehat</span>
+                    </div>
+                    <p>Platform terpercaya untuk tips kesehatan mahasiswa dan layanan konseling kampus</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#tips">Tips Kesehatan</a></li>
+                        <li><a href="#layanan">Layanan</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Konseling Psikolog</a></li>
+                        <li><a href="#">Artikel Kesehatan</a></li>
+                        <li><a href="#">Program Olahraga</a></li>
+                        <li><a href="#">Komunitas Mahasiswa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Dapatkan tips kesehatan terbaru di email Anda</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kampus Sehat. All rights reserved. | Designed with <i class="fas fa-heart"></i> for student health</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Tidur Cukup untuk Mahasiswa</h2>
+            <p>Mahasiswa sering begadang untuk mengejar deadline atau belajar untuk ujian. Namun, tidur yang cukup sangat penting untuk performa akademik:</p>
+            <ul>
+                <li>Meningkatkan daya ingat dan kemampuan belajar</li>
+                <li>Memperbaiki konsentrasi saat kuliah</li>
+                <li>Meningkatkan sistem imun</li>
+                <li>Mengurangi stres dan anxiety</li>
+                <li>Meningkatkan mood dan produktivitas</li>
+                <li>Membantu pengambilan keputusan yang lebih baik</li>
+            </ul>
+            <p><strong>Tips untuk Mahasiswa:</strong></p>
+            <ul>
+                <li>Buat jadwal tidur yang konsisten, bahkan di weekend</li>
+                <li>Hindari kafein setelah jam 4 sore</li>
+                <li>Matikan gadget 30 menit sebelum tidur</li>
+                <li>Jangan menunda-nunda tugas hingga malam hari</li>
+                <li>Power nap 15-20 menit di siang hari jika perlu</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Mengelola Stres Mahasiswa</h2>
+            <p>Stres akademik adalah hal yang wajar, tetapi harus dikelola dengan baik agar tidak berdampak pada kesehatan fisik dan mental:</p>
+            <ul>
+                <li>Buat to-do list dan prioritaskan tugas</li>
+                <li>Gunakan teknik Pomodoro untuk belajar</li>
+                <li>Jangan menunda-nunda pekerjaan</li>
+                <li>Minta bantuan dosen atau teman jika kesulitan</li>
+                <li>Praktikkan teknik pernapasan dalam</li>
+                <li>Luangkan waktu untuk hobi dan me-time</li>
+            </ul>
+            <p><strong>Tanda-tanda Stres Berlebihan:</strong></p>
+            <ul>
+                <li>Sulit tidur atau tidur berlebihan</li>
+                <li>Kehilangan nafsu makan atau makan berlebihan</li>
+                <li>Sulit konsentrasi</li>
+                <li>Mudah marah atau cemas berlebihan</li>
+                <li>Sakit kepala atau masalah pencernaan</li>
+            </ul>
+            <p><strong>Jika mengalami tanda-tanda di atas, segera hubungi layanan konseling kampus!</strong></p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Pola Makan Sehat untuk Mahasiswa</h2>
+            <p>Kesibukan kampus sering membuat mahasiswa skip makan atau makan sembarangan. Padahal, nutrisi yang baik penting untuk performa akademik:</p>
+            <ul>
+                <li>JANGAN SKIP SARAPAN - ini yang paling penting!</li>
+                <li>Bawa bekal dari kos/rumah untuk menghemat dan lebih sehat</li>
+                <li>Hindari terlalu banyak gorengan dan makanan instan</li>
+                <li>Perbanyak buah dan sayuran</li>
+                <li>Konsumsi protein (telur, ayam, tahu, tempe)</li>
+                <li>Batasi minuman manis dan bersoda</li>
+            </ul>
+            <p><strong>Menu Sehat & Murah untuk Mahasiswa:</strong></p>
+            <ul>
+                <li>Sarapan: Nasi goreng telur + sayur</li>
+                <li>Snack: Pisang, roti gandum, kacang-kacangan</li>
+                <li>Makan siang: Nasi + lauk protein + sayur</li>
+                <li>Makan malam: Hindari makan berat, pilih menu ringan</li>
+            </ul>
+            <p><strong>Tips:</strong> Siapkan meal prep di hari Minggu untuk seminggu ke depan!</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Olahraga untuk Mahasiswa Sibuk</h2>
+            <p>Tidak perlu ke gym yang mahal! Ada banyak cara berolahraga yang praktis dan murah untuk mahasiswa:</p>
+            <ul>
+                <li>Jalan kaki atau bersepeda ke kampus</li>
+                <li>Naik tangga instead of lift</li>
+                <li>Olahraga di kamar: push-up, sit-up, plank</li>
+                <li>Follow workout videos di YouTube (gratis!)</li>
+                <li>Ikut olahraga bersama teman atau UKM olahraga</li>
+                <li>Stretching setiap 2 jam saat belajar</li>
+            </ul>
+            <p><strong>Manfaat Olahraga untuk Mahasiswa:</strong></p>
+            <ul>
+                <li>Meningkatkan energi dan stamina</li>
+                <li>Mengurangi stres dan anxiety</li>
+                <li>Meningkatkan kualitas tidur</li>
+                <li>Meningkatkan fokus dan konsentrasi</li>
+                <li>Menjaga berat badan ideal</li>
+                <li>Meningkatkan mood dan kepercayaan diri</li>
+            </ul>
+            <p><strong>Target:</strong> Minimal 15-30 menit aktivitas fisik setiap hari!</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Pentingnya Hidrasi untuk Mahasiswa</h2>
+            <p>Dehidrasi dapat menurunkan konsentrasi dan performa akademik. Banyak mahasiswa lupa minum air saat sibuk kuliah:</p>
+            <ul>
+                <li>Meningkatkan konsentrasi dan fokus belajar</li>
+                <li>Mencegah sakit kepala dan kelelahan</li>
+                <li>Membantu metabolisme tubuh</li>
+                <li>Menjaga kesehatan kulit</li>
+                <li>Meningkatkan energi</li>
+                <li>Membantu detoksifikasi tubuh</li>
+            </ul>
+            <p><strong>Tips Minum Air untuk Mahasiswa:</strong></p>
+            <ul>
+                <li>Bawa tumbler/botol minum ke kampus</li>
+                <li>Minum 2 gelas saat bangun tidur</li>
+                <li>Minum sebelum dan sesudah makan</li>
+                <li>Set reminder di HP untuk minum air</li>
+                <li>Minum lebih banyak saat cuaca panas</li>
+                <li>Ganti minuman manis dengan air putih</li>
+            </ul>
+            <p><strong>Target:</strong> Minimal 8 gelas (2 liter) per hari, lebih banyak jika beraktivitas berat!</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Menjaga Kesehatan Mental Mahasiswa</h2>
+            <p>Kesehatan mental sama pentingnya dengan kesehatan fisik. Jangan abaikan kesehatan mental Anda di tengah kesibukan kampus:</p>
+            <ul>
+                <li>Jaga komunikasi dengan keluarga dan teman dekat</li>
+                <li>Jangan mengisolasi diri saat merasa down</li>
+                <li>Ikut organisasi atau komunitas yang positif</li>
+                <li>Berbagi cerita dengan teman yang dipercaya</li>
+                <li>Luangkan waktu untuk bersosialisasi</li>
+                <li>Jangan bandingkan diri dengan orang lain di media sosial</li>
+            </ul>
+            <p><strong>Kapan Harus Mencari Bantuan Profesional?</strong></p>
+            <ul>
+                <li>Merasa sedih atau cemas berkepanjangan (lebih dari 2 minggu)</li>
+                <li>Kehilangan minat pada aktivitas yang biasanya disukai</li>
+                <li>Perubahan pola tidur atau makan yang drastis</li>
+                <li>Sulit konsentrasi yang mengganggu kuliah</li>
+                <li>Pikiran untuk menyakiti diri sendiri</li>
+            </ul>
+            <p><strong>Layanan Bantuan:</strong></p>
+            <ul>
+                <li>Konseling kampus (biasanya gratis)</li>
+                <li>Hotline kesehatan mental: 119 ext 8</li>
+                <li>Aplikasi konseling online</li>
+            </ul>
+            <p><strong>Ingat: Meminta bantuan adalah tanda kekuatan, bukan kelemahan!</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
